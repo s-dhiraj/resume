@@ -1,0 +1,360 @@
+*{
+	padding: 0px;
+	margin:0px;
+	font-family: sans-serif;
+}
+.body-header{
+	
+	height: 65vh;
+	opacity: 0.8;
+	background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding-top: 2rem;
+}
+.horizontal-list{
+   text-align: center;
+}
+.horizontal-list li{
+   list-style: none;
+   display: inline-block;
+   padding: 0px 3px;
+   font-weight: 100px;
+}
+.list li a{
+	color: white;
+	text-decoration: none;
+	transition: color 0.5s,border-bottom 4s;
+}
+.list li a:hover{
+	color:red;
+	border-bottom: 2px solid red;
+}
+#social-container{
+	margin-top: 20vh;
+}
+#myname{
+	color: white;
+	text-align: center;
+	font-size: 2rem;
+}
+.icons li a i{
+	color:white;
+	padding:15px;
+}
+.icons li a i:hover{
+	border-radius: 50%;
+	box-shadow: 0px 0px 6px 1px violet;
+}
+/*contains about body */
+section{
+	display:flex;
+	flex-direction: column;
+	padding-bottom: 7rem;
+	align-items: center;
+}
+.section-heading{
+	width: auto;
+	padding: 10px 10px 10px;
+	font-weight: 400;
+}
+.section-heading span{
+	display: inline-block;
+	margin: auto;
+	color: #2857a4;
+	font-size: 50px;
+	padding-top: 25px;
+	margin-right: 0.5rem;
+}
+section:nth-child(2n+1){
+	background-color: white;
+}
+section:nth-child(2n){
+	background-color:#e2e1e1;
+}
+/* about section */
+#About{
+	position: relative;
+	margin: auto;
+	height: auto;
+}
+#my-image{
+	width: 12rem;
+	height: 12rem;
+	margin: auto;
+}
+#my-image img{
+	margin-top: -17vh;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	border: 2px solid white;
+	box-shadow: 1px 1px 10px 2px violet;
+}
+#about-info{
+	position: absolute;
+	padding:7rem;
+	text-align: center; 
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    font-weight: bold;
+ }
+ #skills-percent{
+ 	height: auto;
+ 	width: 75%;
+ 	display: flex;
+ 	justify-content: space-evenly;
+ 	flex-wrap: wrap;
+ 	overflow: hidden;
+ }
+ .full-percent{
+ 	height: 2.2rem;
+ 	width: 13rem;
+ 	border-radius: 2rem;
+ 	border-radius: 2px solid red;
+ 	background-color: #cecece;
+ 	margin: 25px;
+ }
+ .skill-name span{
+ 	margin-left: 10px;
+ 	font-size: 1rem;
+ 	align-items: center;
+ 	color: white;
+ }
+ .full-percent>div{
+ 	border-radius: 2rem 0rem 0rem 2rem;
+ }
+ /* work-experience section */
+ .section-work{
+ 	width: 75%;
+ 	height: auto;
+ 	position: relative;
+ }
+ .section-work div:nth-child(2n){
+ 	left:55%;
+ }
+ .work-1{
+ 	position: relative;
+ 	text-align: right;
+ 	width: 45%;
+ 	margin-bottom: 60px; 
+ }
+ #split-portion{
+ 	position: absolute;
+ 	left:50%;
+ 	height: 66%;
+ 	width: 0px;
+ 	top: 8%;
+ 	border:1px dashed blue;
+ }
+ #split-portion #scroll{
+ 	position: sticky;
+ 	top: 115px;
+ }
+ #split-portion i{
+    transform: rotate(90deg);
+    font-size: 40px;
+    color: #2857a4;
+    display: block;
+    margin-top: -50px;
+ }
+ .work-1::after{
+ 	top: 23%;
+ 	content: '';
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: lightgrey;
+ }
+ .work-1:nth-child(2n+1)::after {
+    left:109%;
+}
+
+
+.work-1:nth-child(2n)::after {
+    right: 109%;
+}
+
+ .content-para{
+ 	text-align: justify;
+ }
+ .Designation{
+ 	color: #2857a4;
+ 	font-weight:bold;
+ }
+ .company-name{
+ 	  color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+ }
+ .date{
+ 	color: grey;
+ 	font-weight: 300;
+ }
+ /*  Education Section */
+ #split-portion-2{
+ 	position: absolute;
+ 	left:50%;
+ 	height: 66%;
+ 	width: 0px;
+ 	top: 8%;
+ 	border:1px dashed blue;
+ }
+ #split-portion-2 #scroll-2{
+ 	position: sticky;
+ 	top: 115px;
+ }
+ #split-portion-2 i{
+    transform: rotate(90deg);
+    font-size: 40px;
+    color: #2857a4;
+    display: block;
+    margin-top: -50px;
+ }
+ /* Portfolio section */
+ #port-section{
+ 	display: flex;
+ 	justify-content: space-around;
+ 	flex-wrap: wrap;
+ 	box-sizing: border-box;
+ 	padding: 0px 50px;
+ 	margin-bottom: 20px;
+ }
+ .image-container{
+ 	max-width: 300px;
+ 	overflow: hidden;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	position: relative;
+ 	margin: 30px;
+ }
+ .image-container img{
+	height: 100%;
+	width: 100%;
+}
+ .info-para{
+ 	transition: all 1s ease-in-out;
+ 	color:transparent;
+ 	text-align: center;
+ 	position: absolute;
+ 	height: 100%;
+ 	top: 0;
+ 	left:0;
+ 	padding: 10px;
+ 	font-size: 2rem;
+ }
+
+  .image-container:hover{
+ 	box-shadow: 0 0 20px #74ADC8;
+ }
+ .image-container:hover .info-para{
+ 	 background-color: #80808078;
+ 	 color: white;
+ }
+ /* Contact Section */
+ #Contact{
+    background-image: linear-gradient(to right,#2929b7,#161658);
+    color: white;
+ }
+ .contact-heading{
+ 	padding:50px 4px 50px 0px;
+ }
+.contact-heading span{
+	color: white;
+	font-size: 2.5rem;	
+}
+#contact-info{
+	display: flex;
+}
+#basic-info{
+	width: 50%;
+	margin-left: 10%;
+	padding-right: 30px;
+}
+#form-info input,textarea{
+	max-width: 90%;
+	border: 0px solid transparent;
+	border-bottom: 1px solid white;
+	color: #d9dcdd;
+	background:transparent;
+	width: 90%;
+	line-height: 2.6;
+	margin: 15px;
+	font-size: 1rem;
+}
+#address-info{
+	width: 50%;
+    margin-right: 10%;
+    padding-left: 30px;
+}
+#address-info h2{
+	padding-bottom: 20px;
+}
+#address-info p,h4{
+	padding-bottom: 20px;
+	color: grey;
+}
+.horizontal-list-contact{
+   text-align: center;
+}
+.horizontal-list-contact li{
+   list-style: none;
+   display: inline-block;
+   padding: 0px 15px;
+   font-weight: 100px;
+   font-size: 1.5rem;
+}
+#form-info button[type="submit"]{
+	 background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    margin-bottom: 8%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+ /* percentage class */
+ .forty-percent{
+ 	background-color: orange;
+ 	width: 40%;
+ 	height: inherit;
+ }
+  .seventy-percent{
+ 	background-color: red;
+ 	width: 70%;
+ 	height: inherit;
+ }
+  .eighty-percent{
+ 	background-color: green;
+ 	width: 80%;
+ 	height: inherit;
+ }
+  .thirty-five-percent{
+ 	background-color: blue;
+ 	width: 35%;
+ 	height: inherit;
+ }
+  .fifty-percent{
+ 	background-color: pink;
+ 	width: 50%;
+ 	height: inherit;
+ }
+ .mb75px{
+ 	padding-bottom: 75px;
+ }
